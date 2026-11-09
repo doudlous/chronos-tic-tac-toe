@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-pixel-title {
+    font-family: 'Press Start 2P', monospace, cursive;
+  }
+  .font-pixel-body {
+    font-family: 'Silkscreen', 'VT323', monospace;
+  }
+  .font-pixel-mono {
+    font-family: 'VT323', monospace;
+  }
+  
+  /* Retro Pixel Bevels & Shadows */
+  .pixel-box {
+    box-shadow: 
+      inset -4px -4px 0px 0px #0a0a16,
+      inset 4px 4px 0px 0px #2a2a4c,
+      4px 4px 0px 0px #000000;
+  }
+  .pixel-box-cyan {
+    box-shadow: 
+      inset -4px -4px 0px 0px #083344,
+      inset 4px 4px 0px 0px #06b6d4,
+      4px 4px 0px 0px #000000;
+  }
+  .pixel-box-rose {
+    box-shadow: 
+      inset -4px -4px 0px 0px #4c0519,
+      inset 4px 4px 0px 0px #f43f5e,
+      4px 4px 0px 0px #000000;
+  }
+  .pixel-btn {
+    box-shadow: 
+      inset -3px -3px 0px 0px rgba(0, 0, 0, 0.6),
+      inset 3px 3px 0px 0px rgba(255, 255, 255, 0.35),
+      3px 3px 0px 0px #000000;
+  }
+  .pixel-btn:active {
+    box-shadow: 
+      inset 3px 3px 0px 0px rgba(0, 0, 0, 0.7),
+      inset -3px -3px 0px 0px rgba(255, 255, 255, 0.15),
+      1px 1px 0px 0px #000000;
+    transform: translate(2px, 2px);
+  }
+  .pixel-cell {
+    box-shadow: 
+      inset -4px -4px 0px 0px #111122,
+      inset 4px 4px 0px 0px #2c2c4d,
+      3px 3px 0px 0px #000000;
+  }
+  .pixel-cell:hover:not(:disabled) {
+    box-shadow: 
+      inset -4px -4px 0px 0px #191933,
+      inset 4px 4px 0px 0px #424270,
+      4px 4px 0px 0px #000000;
+  }
+  .pixel-cell-winning {
+    box-shadow: 
+      inset -4px -4px 0px 0px #854d0e,
+      inset 4px 4px 0px 0px #facc15,
+      0 0 16px rgba(250, 204, 21, 0.5);
+  }
+  
+  /* CRT scanlines effect */
+  .crt-scanlines {
+    background: linear-gradient(
+      rgba(18, 16, 26, 0) 50%, 
+      rgba(0, 0, 0, 0.35) 50%
+    );
+    background-size: 100% 4px;
+  }
+
+  /* Pixel grid pattern */
+  .pixel-grid-pattern {
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 16px 16px;
+  }
+}

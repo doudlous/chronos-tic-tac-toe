@@ -1,0 +1,6 @@
+{
+  "name": "Tic-Tac-Toe: Event-Sourced Arena",
+  "description": "Turn-based multiplayer and Minimax AI Tic-Tac-Toe with real-time Firebase syncing, turn timeline replay, and state rollback.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
